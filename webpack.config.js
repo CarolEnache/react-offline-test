@@ -7,7 +7,7 @@ const port = 8080;
 
 module.exports = {
     mode: 'development',
-    context: path.resolve(__dirname, 'src'),
+    context: path.resolve(__dirname, 'src/'),
     target: 'web',
     entry: {
         app: [
