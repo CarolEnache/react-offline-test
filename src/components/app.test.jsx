@@ -32,6 +32,12 @@ describe('App component', () => {
       expect(wrapper.find(Subtitle)).toHaveLength(1)
       expect(wrapper.find(List)).toHaveLength(1)
     });
+
+    it('rendres the list items and gauges', () => {
+      const listItemInstance =wrapper.find(ListItem);
+      expect(listItemInstance).toHaveLength(9);
+      expect(listItemInstance.children().find(Gauge)).toHaveLength(9);
+    });
   });
 });
 
